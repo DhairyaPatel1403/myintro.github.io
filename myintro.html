@@ -1,0 +1,496 @@
+<html>
+<title>
+    MyIntro
+</title>
+
+
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+
+</head>
+<style>
+
+
+
+    .header {
+        background-color: aquamarine;
+        color: black;
+        padding-top: 100px;
+        font-family: "Audiowide", sans-serif;
+        font-size: 330px;
+        height: 700px;
+    }
+
+    center {
+        font-family: "Audiowide", sans-serif;
+    }
+
+
+    .card {
+        box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+        max-width: 1000px;
+        padding: 50px;
+        margin: auto;
+        float: left;
+        font-family: arial;
+        border-radius: 20px;
+    }
+
+    .title {
+        color: grey;
+        font-size: 18px;
+    }
+
+    .column {
+        float: left;
+        padding: 20px;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .menu {
+        width: 25%;
+    }
+
+    .content {
+        width: 65%;
+    }
+
+    .profile {
+        width: 10%;
+        float: left;
+        width: 300px;
+        height: 400px;
+        padding: 10px;
+    }
+
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        padding: 8px;
+        margin-bottom: 8px;
+        background-color: #471756;
+        color: #ffffff;
+        font-size: 20px;
+
+    }
+
+    button {
+        background-color: #4CAF50;
+        /* Green */
+        border: none;
+        float: right;
+        color: white;
+        padding: 20px;
+        text-align: right;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    button:hover,
+    button:active {
+        background-color: green;
+    }
+
+    .dark-mode {
+        background-color: black;
+        color: white;
+
+    }
+
+    .menu li:hover {
+        background-color: plum;
+    }
+
+    .button3 {
+        border-radius: 8px;
+    }
+
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #04AA6D;
+    }
+
+    .brief {
+        font-family: "Trirong", serif;
+        float: left;
+    }
+
+
+
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+    * {
+        font-family: Roboto;
+    }
+
+    .footer-distributed {
+        background: #444;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        width: 100%;
+        font: bold 16px sans-serif;
+        text-align: left;
+        padding: 50px 60px 40px;
+        overflow: hidden;
+    }
+
+    section {
+        width: 100%;
+        display: inline-block;
+        background: #ccc;
+        height: 60vh;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+
+    /* Footer left */
+
+    .footer-distributed .footer-left {
+        float: left;
+    }
+
+    /* The company logo */
+
+    .footer-distributed h3 {
+        color: #ffffff;
+        font: normal 36px 'Roboto', cursive;
+        margin: 0 0 10px;
+    }
+
+    .footer-distributed h3 span {
+        color: #5383d3;
+    }
+
+    /* Footer links */
+
+    .footer-distributed .footer-links {
+        color: #ffffff;
+        margin: 0 0 10px;
+        padding: 0;
+    }
+
+    .footer-distributed .footer-links a {
+        display: inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .footer-distributed .footer-company-name {
+        color: #8f9296;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    /* Footer social icons */
+
+    .footer-distributed .footer-icons {
+        margin-top: 40px;
+
+    }
+
+    .footer-distributed .footer-icons a {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background-color: #33383b;
+        border-radius: 2px;
+
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 35px;
+
+        margin-right: 3px;
+        margin-bottom: 5px;
+    }
+
+    /* Footer Right */
+
+    .footer-distributed .footer-right {
+        float: right;
+    }
+
+    .footer-distributed .footer-right p {
+        display: inline-block;
+        vertical-align: top;
+        margin: 15px 42px 0 0;
+        color: #ffffff;
+    }
+
+    /* The contact form */
+
+    .footer-distributed form {
+        display: inline-block;
+    }
+
+    body {
+        background-color: ivory;
+    }
+
+    .footer-distributed form input,
+    .footer-distributed form textarea {
+        display: block;
+        border-radius: 3px;
+        box-sizing: border-box;
+        background-color: #1f2022;
+        box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+        border: none;
+        resize: none;
+
+        font: inherit;
+        font-size: 14px;
+        font-weight: normal;
+        color: #d1d2d2;
+
+        width: 400px;
+        padding: 18px;
+    }
+
+    .footer-distributed ::-webkit-input-placeholder {
+        color: #5c666b;
+    }
+
+    .footer-distributed ::-moz-placeholder {
+        color: #5c666b;
+        opacity: 1;
+    }
+
+    .footer-distributed :-ms-input-placeholder {
+        color: #5c666b;
+    }
+
+
+    .footer-distributed form input {
+        height: 55px;
+        margin-bottom: 15px;
+    }
+
+    .footer-distributed form textarea {
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .footer-distributed form button {
+        border-radius: 3px;
+        background-color: #33383b;
+        color: #ffffff;
+        border: 0;
+        padding: 15px 50px;
+        font-weight: bold;
+        float: right;
+    }
+
+
+
+    @media (max-width: 800px) {
+
+
+        .header {
+            background-color: aquamarine;
+            color: black;
+            padding-top: 100px;
+            font-family: "Audiowide", sans-serif;
+            font-size: 100px;
+            height: 300px;
+        }
+
+        .footer-distributed {
+            padding: 30px;
+        }
+
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-right {
+            float: none;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        img {
+            border-radius: 20px;
+            float: left;
+        }
+
+        .footer-distributed .footer-left {
+            margin-bottom: 40px;
+        }
+
+        .footer-distributed form {
+            margin-top: 30px;
+        }
+
+        .footer-distributed form {
+            display: block;
+        }
+
+        .imgcard {
+            float: left;
+
+        }
+
+        .footer-distributed form button {
+            float: none;
+        }
+    }
+
+
+
+    img {
+        border-radius: 20px;
+        float: right;
+    }
+
+    .container {
+        padding: 2px 16px;
+    }
+</style>
+
+<script>
+    function swapStyleSheet(sheet) {
+        document.getElementById('pagestyle').setAttribute('href', sheet);
+    }
+</script>
+
+<script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+</script>
+
+<body>
+
+    <ul>
+        <li><a class="active" href="file:///C:/Users/Dhairya/Desktop/myintro/myintro.html#home">Home</a></li>
+        <li><a href="file:///C:/Users/Dhairya/Desktop/myintro/school/school.html">School</a></li>
+        <li><a href="file:///C:/Users/Dhairya/Desktop/myintro/interests/interests.html">Interests</a></li>
+        <li><a href="file:///C:/Users/Dhairya/Desktop/myintro/college/college.html">University</a></li>
+        <button onclick="myFunction()">Mode Switch</button>
+    </ul>
+
+
+    <div class="header">
+
+        <center>Dhairya</center>
+
+    </div>
+    <br><br><br>
+
+    <div class="card">
+        <h1>My name is Dhairya Patel.</h1>
+        <p>
+        <h2>I am currently pursuing B.Tech degree in Computer Engineering from Dharamsinh Desai University, Nadiad.</h2>
+        </p>
+        <p>
+        <h2>This is my introductory website, presenting a brief introduction of mine.</h2>
+        </p>
+
+        <p>
+        <h2>This site describes my education portfolio and my interests in various Computer fields.</h2>
+        </p>
+        <p>
+        <h2>Using CSS, JavaScript and HTML, it had it destiny till here.</h2>
+        </p>
+    </div>
+
+
+    <img src="SAVE_20210819_105111.jpg" width="380px" height="500px" class="imgcard">
+
+
+    <br><br>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>MyIntro<span>Dhairya</span></h3><br>
+
+
+
+            <p class="footer-company-name">Contact us...</p>
+
+            <div class="footer-icons">
+
+                <a
+                    href="https://www.linkedin.com/in/dhairya-patel-032070223?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B2YqAAUpTQwWwKl6fm7GhRQ%3D%3D"><img
+                        src="linkedin.png" width="40px" height="40px"></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://github.com/DhairyaPatel1403/DhairyaPatel1403"><img src="github.png" width="40px"
+                        height="40px"></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.instagram.com/dhairya___patel/"><img src="insta.webp" width="40px"
+                        height="40px"></a>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.instagram.com/dhairya___patel/"><img src="insta.webp" width="40px"
+                        height="40px"></a>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+
+
+    </div>
+
+</body>
+
+</html>

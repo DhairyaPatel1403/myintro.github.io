@@ -1,0 +1,121 @@
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #1F2833;
+    }
+
+    .header {
+        background-color: #A239CA;
+        color: black;
+        padding: 5px;
+        font-size: 30px;
+        font-family: "Audiowide", sans-serif;
+        color: white;
+    }
+
+    .footer {
+        background-color: #A239CA;
+        color: black;
+        padding: 15px;
+    }
+
+    .column {
+        float: left;
+        padding: 20px;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .menu {
+        width: 25%;
+    }
+
+    .content {
+        width: 65%;
+        color: white;
+    }
+
+    .profile {
+        width: 10%;
+        float: left;
+        width: 300px;
+        height: 400px;
+        padding: 10px;
+    }
+
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        padding: 8px;
+        margin-bottom: 8px;
+        background-color: #471756;
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+    .button {
+        background-color: #4CAF50;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: right;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    button:hover,
+    button:active {
+        background-color: green;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #471756;
+    }
+
+    /*Dark Mode*/
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+
+    /* Style the topnav links */
+    .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 230px;
+        text-decoration: none;
+    }
+
+    /* Change color on hover */
+    .topnav a:hover {
+        background-color: plum;
+        color: black;
+    }
+
+    .menu li:hover {
+        background-color: #0099cc;
+    }
+
+    .button3 {
+        border-radius: 8px;
+    }
+
+

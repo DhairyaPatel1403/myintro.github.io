@@ -1,0 +1,265 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>
+        MyIntro/unviversity
+    </title>
+
+
+    <link rel="icon" href="school.jpg" type="image/x-icon">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"
+    &effect="neon|outline|emboss|shadow-multiple">
+<style>
+    img {
+        max-width: 100%;
+        height: auto;
+        float: left;
+    }
+
+    
+
+
+    .heading {
+        font-family: cursive;
+        font-size: 100%;
+        color: aquamarine;
+        text-align: center;
+        font-variant: small-caps;
+        font-family: "Audiowide", sans-serif;
+
+    }
+
+    .description {
+        font-family: cursive;
+        font-size: 200%;
+        color: aquamarine;
+        text-align: center;
+        font-variant: small-caps;
+        font-family: "Sofia", sans-serif;
+
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    h2 {
+        background-color: rgba(50, 200, 50, 0.2);
+        width: 1450px;
+
+        padding: 20px;
+        margin: 20px;
+        font-family: "Lucida Console", Courier, monospace;
+        color: green;
+        font-size: 300%;
+
+        border-left: 6px solid aqua;
+        border-radius: 90px;
+
+    }
+
+    .animate-charcter {
+        text-transform: uppercase;
+        background-image: linear-gradient(-225deg,
+                #231557 0%,
+                #44107a 29%,
+                #ff1361 67%,
+                #fff800 100%);
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+        display: inline-block;
+        font-size: 100px;
+    }
+
+
+
+    img {
+        border-radius: 40px;
+    }
+
+    body{
+        background-color: ivory;
+    }
+
+    @keyframes textclip {
+        to {
+            background-position: 200% center;
+        }
+    }
+
+    @media (max-width: 800px) {
+        .heading {
+            font-family: cursive;
+            font-size: 50px;
+            color: aquamarine;
+            text-align: center;
+            font-variant: small-caps;
+            font-family: "Audiowide", sans-serif;
+
+        }
+
+        .animate-charcter {
+            text-transform: uppercase;
+            background-image: linear-gradient(-225deg,
+                    #231557 0%,
+                    #44107a 29%,
+                    #ff1361 67%,
+                    #fff800 100%);
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 2s linear infinite;
+            display: inline-block;
+            font-size: 50px;
+        }
+    }
+
+    fieldset {
+        border-radius: 40px;
+    }
+
+    hr {
+        color: darkslategray;
+    }
+
+    button {
+        background-color: #4CAF50;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: right;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        float: right;
+    }
+
+    button:hover,
+    button:active {
+        background-color: green;
+    }
+
+    .dark-mode {
+        background-color: black;
+        color: white;
+
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+    .active {
+        background-color: #04AA6D;
+    }
+</style>
+
+
+<script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+</script>
+
+
+<body bgcolor="white">
+
+
+    <ul>
+        <li><a class="active" href="file:///C:/Users/Dhairya/Desktop/myintro/myintro.html#home">Home</a></li>
+        <li><a href="file:///C:/Users/Dhairya/Desktop/myintro/school/school.html">School</a></li>
+        <li><a href="file:///C:/Users/Dhairya/Desktop/myintro/interests/interests.html">Interests</a></li>
+        <li><a href="file:///C:/Users/Dhairya/Desktop/myintro/college/college.html">University</a></li>
+        <button onclick="myFunction()">Mode Switch</button>
+    </ul>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <hr>
+                <center>
+                    <h3 class="animate-charcter heading font-effect-emboss">University portfolio</h3>
+                </center>
+                
+                <hr>
+                <br>
+            </div>
+        </div>
+    </div>
+    <center> <img src="college.jpg" alt="Can't load image" width="500" height="600"> </center>
+
+    <center>
+        <h1>I am currently pursuing B.Tech Degree from Dharamsinh Desai University, in Nadiad.
+            I will be graduating from the unviversity at 2025.
+
+        </h1>
+    </center>
+
+</body>
+
+</html>
